@@ -10,14 +10,14 @@ export class CaracteristicasEmpleadoComponent {
 
   @Output() CaracteristicasEmpleado = new EventEmitter<string>();
   
-  constructor(private miServicio:ServicioEmpleadosService){
+  //constructor(private miServicio:ServicioEmpleadosService){}
 
-  }
+  ngOnInit(): void {};
 
   AgregarCaracteristicas(value:string){
 
-    this.miServicio.muestraMensaje("Nueva Caracteristica: " + value);
-    this.CaracteristicasEmpleado.emit(value);
+    //this.miServicio.muestraMensaje("Nueva Caracteristica: " + value);
+    //this.CaracteristicasEmpleado.emit(value);
     
   }
 }
