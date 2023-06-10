@@ -17,7 +17,6 @@ export class CaracteristicasEmpleadoComponent {
   AgregarCaracteristicas(value:string){
 
     //this.miServicio.muestraMensaje("Nueva Caracteristica: " + value);
-    //this.CaracteristicasEmpleado.emit(value);
-    
+    this.CaracteristicasEmpleado.emit(value);
   }
 }
