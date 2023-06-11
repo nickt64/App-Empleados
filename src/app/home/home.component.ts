@@ -21,21 +21,6 @@ export class HomeComponent {
   empleados:Empleado[] = [];
 
 
-  AgregarEmpleado(){
-    let miEmpleado = new Empleado(this.cuadroNombre,this.cuadroApellido,this.cuadroCargo, this.cuadroSalario);
-
-    //this.miServicio.muestraMensaje("Nombre del empleado: " + miEmpleado.nombre);
-
-    this.empleadosService.AgregarEmpleadoServicio(miEmpleado);
-    this.cuadroNombre = "";
-    this.cuadroApellido = "";
-    this.cuadroCargo = "";
-    this.cuadroSalario = 0;
-  }
-
-  cuadroNombre:string = "";
-  cuadroApellido:string = "";
-  cuadroCargo:string = "";
-  cuadroSalario:number = 0;
+  
 
 }
